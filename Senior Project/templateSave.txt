@@ -1,0 +1,305 @@
+Description:
+	Name: Steve
+	Alignment: Lawful Good
+	Player: Billy
+	Character Level: Fighter 8
+	Deity: Torag
+	Homeland: Brevoy
+	Race: Human
+	Size: Medium
+	Gender: Male
+	Age: 30
+	Height: 6'2
+	Weight: 180
+	Hair: Blonde
+	Eyes: Green
+
+Stats:
+	Str: 14
+	Dex: 20
+	Con: 16
+	Int: 11
+	Wis: 9
+	Cha: 7
+
+Stat Adjustments:
+	Str Adjustment: 4
+	Dex Adjustment: 0
+	Con Adjustment: 0
+	Int Adjustment: -2
+	Wis Adjustment: 0
+	Cha Adjustment: 0
+
+Text Blocks:
+	Condition Modifiers: none
+	Languages: none
+	Feats: none
+	Special Abilities: none
+	AC Modifiers
+	Save Modifiers
+
+Speed:
+	Base: 30
+	Armor: 20
+	Fly: 0
+	Swim: 10
+	Climb: 10
+	Burrow: 0
+
+Other Modifiers:
+	Intiative Modifier: 2
+	BAB: 1
+	CMB: 2
+	CMD: 0
+	CMB Modifiers: none
+
+Defenses:
+	HP: 50
+	Total HP: 74
+	Non Lethal: 0
+	Armor: 5
+	Shield: 2
+	Size: -1
+	Natural Armor: 1
+	Deflection: 0
+	Misc: 0
+	Modifiers: none
+	DR: 2
+	SR: 12
+
+Saves:
+	Fortitude:
+		Base: 
+		Magic:
+		Misc: 
+		Temp:		
+
+Attacks:
+	1:
+		Name: Axe
+		Attack Bonus: 5
+		Critical: 20-19
+		Type: Slashing
+		Range: melee
+		Ammunition: none
+		Damage: d12+6
+	2:
+		Name: 
+		Attack Bonus: 
+		Critical: 
+		Type: 
+		Range: 
+		Ammunition: 
+		Damage: 
+	3:
+		Name: Bow
+		Attack Bonus: 4
+		Critical: 20-19
+		Type: Piercing
+		Range: 100ft
+		Ammunition: 23
+		Damage: d8+3
+	4:
+		Name: 
+		Attack Bonus: 
+		Critical: 
+		Type: 
+		Range: 
+		Ammunition: 
+		Damage: 
+	5:
+		Name: 
+		Attack Bonus: 
+		Critical: 
+		Type: 
+		Range: 
+		Ammunition: 
+		Damage: 
+
+Skills:
+	Acrobatics:
+		Ranks: 1
+		Misc Mod: 0
+	Appraise:
+		Ranks: 0
+		Misc Mod: 3
+	Bluff:
+		Ranks: 2
+		Misc Mod: 4
+	Climb:
+		Ranks: 0
+		Misc Mod: 0
+	Craft1:
+		Name: Weapons
+		Ranks: 0
+		Misc Mod: 0
+	Craft2:
+		Name: 
+		Ranks: 0
+		Misc Mod: 0
+	Craft3:
+		Name: 
+		Ranks: 0
+		Misc Mod: 0
+	Diplomacy:
+		Ranks: 0
+		Misc Mod: 0
+	Disable Device:
+		Ranks: 0
+		Misc Mod: 0
+	Disguise:
+		Ranks: 0
+		Misc Mod: 0
+	Escape Artist:
+		Ranks: 0
+		Misc Mod: 0
+	Fly:
+		Ranks: 1
+		Misc Mod: 2
+	Handle Animal:
+		Ranks: 0
+		Misc Mod: 0
+	Heal:
+		Ranks: 0
+		Misc Mod: 0
+	Intimidate:
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(Arcana):
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(Dungeoneering):
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(Engineering):
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(Geography):
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(History):
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(Local):
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(Nature):
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(Nobility):
+		Ranks: 3
+		Misc Mod: 4
+	Knowledge(Planes):
+		Ranks: 0
+		Misc Mod: 0
+	Knowledge(Religion):
+		Ranks: 0
+		Misc Mod: 0
+	Linguistics:
+		Ranks: 0
+		Misc Mod: 0
+	Perception:
+		Ranks: 0
+		Misc Mod: 0
+	Perform1:
+		Name: String
+		Ranks: 1
+		Misc Mod: 0
+	Perform2:
+		Name: Wind
+		Ranks: 0
+		Misc Mod: 2
+	Profession1:
+		Name: Fishing
+		Ranks: 1
+		Misc Mod: 4
+	Profession2:
+		Name: 
+		Ranks: 0
+		Misc Mod: 0
+	Ride:
+		Ranks: 0
+		Misc Mod: 0
+	Sense Motive:
+		Ranks: 0
+		Misc Mod: 0
+	Sleight of Hand:
+		Ranks: 0
+		Misc Mod: 0
+	Spellcraft:
+		Ranks: 0
+		Misc Mod: 0
+	Stealth:
+		Ranks: 0
+		Misc Mod: 0
+	Survival:
+		Ranks: 0
+		Misc Mod: 0
+	Swim:
+		Ranks: 0
+		Misc Mod: 0
+	Use Magic Device:
+		Ranks: 0
+		Misc Mod: 0
+
+AC Items:
+	1:
+		Name: Breastplate
+		Bonus: 8
+		Type: Armor
+		ACP: -3
+		Spell Failure: -20%
+		Weight: 10
+		Properties: none
+	2:
+		Name: Buckler
+		Bonus: 1
+		Type: Shield
+		ACP: -1
+		Spell Failure: -10%
+		Weight: 3
+		Properties: 
+	3:
+		Name: 
+		Bonus: 
+		Type: 
+		ACP: 
+		Spell Failure: 
+		Weight: 
+		Properties: 
+	4:
+		Name: 
+		Bonus: 
+		Type: 
+		ACP: 
+		Spell Failure: 
+		Weight: 
+		Properties: 
+	5:
+		Name: 
+		Bonus: 
+		Type: 
+		ACP: 
+		Spell Failure: 
+		Weight: 
+		Properties: 
+Gear:
+	1:
+		Name: Backpack
+		Weight: 10
+	2:
+		Name: Armor
+		Weight: 10
+	3:
+		Name: Shield
+		Weight: 3
+
+Money:
+	Copper: 5
+	Silver: 7
+	Gold: 120
+	Platinum: 10
+
+Character Experience:
+	Experience: 500
+	Next Level: 2000

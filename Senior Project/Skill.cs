@@ -9,14 +9,50 @@ namespace Senior_Project
     class Skill
     {
         private string myName;                  //name of the skill
-        private bool myClassSkill;              //whether or not the skill is a class skill
         private string myStatName;              //name of the ascociated character stat
+        private bool myClassSkill;              //whether or not the skill is a class skill
         private int myStatBonus;                //value of the ascociated character stat
         private int mySkillRanks;               //number of ranks put in this skill
-        private int[] myBonuses = new int[5];   //stat modifiers from 0:feats, 1:Race, 2:Traits, 3:items, 4:other
+        private int myBonus;                    //modifiers to the skill roll
 
-        //constructor
-        public Skill(string name="", bool classSkill=false, string statName="", int statBonus=0, int skillRank=0)
+        /**/
+        /*
+        Skill::Skill() Skill::Skill()
+
+        NAME
+
+                Skill::Skill - constructor for the skill class
+
+        SYNOPSIS
+
+                Skilll::Skill( string name, int statBonus, bool classSkill, string statName, 
+                    int skillRank );
+                    name        --> name of the skill
+                    statBonus   --> ability score bonus to skill roll
+                    classSkill  --> whether or not skill is a class skill
+                    statName    --> name of ability score that gives bonus
+                    skillRank   --> number of ranks put into this skill
+
+        DESCRIPTION
+
+                This function assigns the parameters/default values to the member 
+                variables of the object. 
+
+        RETURNS
+
+                none
+
+        AUTHOR
+
+                Peter Wright
+
+        DATE
+
+                July 23, 2018
+
+        */
+        /**/
+        public Skill(string name="", int statBonus = 0, bool classSkill=false, string statName="", int skillRank=0)
         {
             //assign parameters to member variables
             myName = name;
@@ -25,8 +61,42 @@ namespace Senior_Project
             myStatBonus = statBonus;
             mySkillRanks = skillRank;
         }
+        /**/
+        /* Skilll::Skill( string name, int statBonus, bool classSkill, strin statName, int skillRank ); */
+        /**/
 
-        //calculate the total bonus for this skill
+        /**/
+        /*
+        Skill::getTotalBonus() Skill::getTotalBonus()
+
+        NAME
+
+                Skill::getTotalBonus - get the total bonus to skill
+
+        SYNOPSIS
+
+                int Skilll::getTotalBonus();
+
+        DESCRIPTION
+
+                This function adds the the skill ranks and stat bonus to
+                the total. Then if it's a class skill add 3 to the total.
+                Then add the miscelleous bonus to total and return the result
+
+        RETURNS
+
+                Returns the total of bonus to skill roll as an integer value.
+
+        AUTHOR
+
+                Peter Wright
+
+        DATE
+
+                July 23, 2018
+
+        */
+        /**/
         public int getTotalBonus()
         {
             //add stat bonus and skill ranks to total
@@ -35,17 +105,17 @@ namespace Senior_Project
             //add class skill bonus if applicable
             if (myClassSkill)
             {
-                total += 4;
+                total += 3;
             }
 
-            //add other bonus to total
-            for (int i = 0; i < myBonuses.Length; i++)
-            {
-                total += myBonuses[i];
-            }
+            //add bonus to skill
+            total += myBonus;
 
             return total;
         }
+        /**/
+        /* int Skilll::getTotalBonus(); */
+        /**/
 
         //property for skill name
         public string Name
@@ -131,78 +201,18 @@ namespace Senior_Project
             }
         }
 
-        //property for skill's feat bonus
-        public int FeatBonus
+        //property for skill's bonus
+        public int Bonus
         {
             //mutator
             set
             {
-                myBonuses[0] = value;
+                myBonus = value;
             }
             //accessor
             get
             {
-                return myBonuses[0];
-            }
-        }
-
-        //property for skill's race bonus
-        public int RaceBonus
-        {
-            //mutator
-            set
-            {
-                myBonuses[1] = value;
-            }
-            //accessor
-            get
-            {
-                return myBonuses[1];
-            }
-        }
-
-        //property for skill's trait bonus
-        public int TraitBonus
-        {
-            //mutator
-            set
-            {
-                myBonuses[2] = value;
-            }
-            //accessor
-            get
-            {
-                return myBonuses[2];
-            }
-        }
-
-        //property for skill's item bonus
-        public int ItemBonus
-        {
-            //mutator
-            set
-            {
-                myBonuses[3] = value;
-            }
-            //accessor
-            get
-            {
-                return myBonuses[3];
-            }
-        }
-
-        //property for skill's other bonus
-        public int OtherBonus
-        {
-            //mutator
-            set
-            {
-                myBonuses[4] = value;
-            }
-            //accessor
-            get
-            {
-                return myBonuses[4];
+                return myBonus;
             }
         }
     }
